@@ -21,13 +21,13 @@ class ViewController: UIViewController {
         redLight.layer.cornerRadius = redLight.frame.size.width / 2
         yellowLight.layer.cornerRadius = yellowLight.frame.size.width / 2
         greenLight.layer.cornerRadius = greenLight.frame.size.width / 2
+        nextLight.layer.cornerRadius = 10
         
         redLight.alpha = 0.25
         yellowLight.alpha = 0.25
         greenLight.alpha = 0.25
     }
     
-
     @IBAction func colorChange(_ sender: UIButton) {
         sender.setTitle("NEXT", for: .normal)
         sender.titleLabel?.font = .systemFont(ofSize: 25)
